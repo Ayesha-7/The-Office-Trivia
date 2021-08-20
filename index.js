@@ -20,7 +20,7 @@ console.log(h1('Hi ' + userName + '!'));
 console.log();
 console.log(R("Are you ready?!"));
 console.log(WA("\nLets go through some rules first."));
-console.log(h2("\nThere are 3 levels\n   i) Novice 😶 - 5 Questions\n Answer 4 question right to get in level 2.\n  ii) Rookie 😅 - 4 Questions\n Answer 3 question right to get in level 3\n iii) True Fan 😎  - 3 Questions\n Answer 3 question right to be the WINNERR\n and and you get a Dundie 🏆 🤩 "));
+console.log(h2("\nThere are 3 levels\n   i) Novice 😶 - 5 Questions\n Answer 4 question right to get in level Rookie.\n  ii) Rookie 😅 - 4 Questions\n Answer 3 question right to get in level True Fan\n iii) True Fan 😎  - 3 Questions\n Answer 3 question right to be the WINNERR\n and and you get a Dundie 🏆 🤩 "));
 console.log(chalk.white("------------------------------------"));
 console.log(Q("\nLet's start!"));
 
@@ -138,40 +138,40 @@ function play() {
   var points = lvl(QB[0],"Novice 😶")
   //won level one 
   if (points >= 4){
-    console.log("Congratulations! You are advancing to Level 2")
+    console.log("Congratulations! You are advancing to Level Rookie")
     points = lvl(QB[1],"Rookie 😅")
     //won level 2
     if(points >= 3){
-      console.log("You made it! You are advancing to Level 3")
+      console.log("You made it! You are advancing to Level True Fan")
     points = lvl(QB[2],"True Fan 😎")
 
     //won lvl 3
     if (score == 12){
-      console.log("Yeahh 🎊🎉 You did it!! 🎊🎉")
+      console.log("Yeahh 🎊🎉 You did it " + userName +" !! 🎊🎉")
       console.log("Your final score is " + score + " 🤩🤩")
       console.log("Here you go! 🥇")
       console.log("You've earned it! 👏👏👏")
       console.log("\nAaaaand here's your dundie 🏆")
     }else if(score == 11){
-      console.log("You deserved a dundie!, but Better Luck Next Time")
+      console.log(userName +" Ahh so close, but Better Luck Next Time")
       console.log("Your final score is " + score)
       console.log("Here you go! 🥈")
       console.log("You've earned it! 👏👏")
     }else{
-      console.log("\nYou played very well! ")
+      console.log("\n"+userName +" You played very well! ")
       console.log("Your final score is " + score)
       console.log("Here you go! 🥉")
       console.log("👏")
     }
     }//lost level two
     else{
-      console.log("You were almost there :-0")
+      console.log(userName+" You were almost there :-0")
       console.log("Your final score is " + score)
     }
     
   }//lost level one
   else{
-    console.log("\nik You tried")
+    console.log("\n"+ userName +" ik You tried")
     console.log("\nYour final score is " + score)
   }  
 console.log("\nHere's the scoreboard")
