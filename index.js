@@ -20,7 +20,8 @@ console.log(h1('Hi ' + userName + '!'));
 console.log();
 console.log(R("Are you ready?!"));
 console.log(WA("\nLets go through some rules first."));
-console.log(h2("\nThere are 3 levels\n   i) Novice 😶 - 5 Questions\n Answer 4 question right to get in level Rookie.\n  ii) Rookie 😅 - 4 Questions\n Answer 3 question right to get in level True Fan\n iii) True Fan 😎  - 3 Questions\n Answer 3 question right to be the WINNERR\n and and you get a Dundie 🏆 🤩 "));
+console.log("\n1. There are 3 levels\n" + h2("   i) Novice 😶 - 5 Questions\n Answer 4 question right to get in level Rookie.\n  ii) Rookie 😅 - 4 Questions\n Answer 3 question right to get in level True Fan\n iii) True Fan 😎  - 3 Questions\n Answer 3 question right to be the WINNERR\n and and you get a Dundie 🏆 🤩 "));
+console.log("2. Answer the questions by pressing the number key correspoding to your answer.") 
 console.log(chalk.white("------------------------------------"));
 console.log(Q("\nLet's start!"));
 
@@ -147,16 +148,13 @@ function play() {
 
     //won lvl 3
     if (score == 12){
-      console.log("Yeahh 🎊🎉 You did it " + userName +" !! 🎊🎉")
+      console.log("Yayyy 🎊🎉 You did it " + userName +" !! 🎊🎉")
       console.log("Your final score is " + score + " 🤩🤩")
       console.log("Here you go! 🥇")
-      console.log("You've earned it! 👏👏👏")
-      console.log("\nAaaaand here's your dundie 🏆")
     }else if(score == 11){
       console.log(userName +" Ahh so close, but Better Luck Next Time")
       console.log("Your final score is " + score)
       console.log("Here you go! 🥈")
-      console.log("You've earned it! 👏👏")
     }else{
       console.log("\n"+userName +" You played very well! ")
       console.log("Your final score is " + score)
@@ -174,11 +172,12 @@ function play() {
     console.log("\n"+ userName +" ik You tried")
     console.log("\nYour final score is " + score)
   }  
-console.log("\nHere's the scoreboard")
+console.log("\nScoreboard")
 console.log(scoreDB)
 if(score === scoreDB[0].score)
-console.log("Ik you should be there too, send me screenshot of your score, I'll update the scoreboard.")
+console.log("If you think you should be there too, send me screenshot of your score, I'll update the scoreboard.")
 
+console.log("Share this quiz with your friends/ office colleagues😁, here's the link" + "https://replit.com/@AyeshaShaikh2/The-Office-Trivia?embed=1&output=1")
 }
 
 play()
